@@ -12,10 +12,19 @@ const TopMedium = styled.View'
 const TopLarge = styled.View'
     marginTop: 16px;
 ';
+const LeftSmall = styled.View'
+    marginLeft: 4px;
+';
+const LeftMedium = styled.View'
+    marginLeft: 8px;
+
+';
+const LeftLarge = styled.View'
+    marginLeft: 16px;
+';
+
 
 export const Spacer = ({ varient }) => {
-    switch(variant) {
-
-
-    }
-}
+   if (variant === "top.small") {
+    return <TopSmall />;
+   }
