@@ -28,3 +28,34 @@ export const Spacer = ({ varient }) => {
    if (variant === "top.small") {
     return <TopSmall />;
    }
+}
+
+export const Spacer = ({ variant }) => {
+    if (variant === "top.medium") {
+        return <TopMedium />;
+    }
+}
+
+export const Spacer = ({ variant }) => {
+    if (variant === "top.large") {
+        return <TopLarge />;
+    }
+}
+
+export const Spacer = ({ variant }) => {
+    if (variant === "left.small") {
+        return <Left.Small />;
+    }
+}
+
+export const Spacer = ({ variant }) => {
+    of (variant === "left.medium") {
+        return <LeftMedium />;
+    }
+}
+
+export const Spacer = ({ variant }) => {
+    if (variant === "left.large") {
+        return <LeftLarge />;
+    }
+}

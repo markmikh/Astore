@@ -40,7 +40,7 @@ export const ProductInfo = ({ product = {} }) => {
     photos = [
       "https://store.auroramarine.com/media/catalog/product/cache/3e5f9ca388308b099b51a8e93293e1b1/a/l/alumetron-both_1.jpeg",
     ],
-    price = "$100.00",
+    price = "$120.00",
   } = product;
 
   const ratingArray = Array.from(new Array(Math.ceil(rating)));
