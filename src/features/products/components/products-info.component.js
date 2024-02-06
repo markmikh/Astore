@@ -4,33 +4,17 @@ import { Text,  } from "react-native";
 import { Card } from "react-native-paper";
 import { SvgXml } from "react-native-svg";
 import star from "../../../../assets/star";
+import {
+  ProductCard,
+  ProductCardCover,
+  Info,
+  Section,
+  SectionEnd,
+  Rating,
+  Icon,
+  Adress,
+} from "./products-info.styles";
 
-const ProductCard = styled(Card)`
-  background-color: ${(props) => props.theme.colors.bg.primary};
-`;
-const ProductCardCover = styled(Card.Cover)`
-  padding: ${(props) => props.theme.space[3]};
-  background-color: ${(props) => props.theme.colors.bg.primary};
-`;
-const Title = styled(Text)`
-  font-family: ${(props) => props.theme.fonts.body};
-  font-size: ${(props) => props.theme.fontSizes.title};
-
-  color: ${(props) => props.theme.colors.ui.primary};
-`;
-const Price = styled(Text)`
-  font-family: ${(props) => props.theme.fonts.heading};
-  font-size: ${(props) => props.theme.fontSizes.body};
-`;
-
-const Info = styled.View`
-  padding: ${(props) => props.theme.space[3]};
-`;
-const Rating = styled.View`
-  flex-direction: row;
-  padding-top: ${(props) => props.theme.space[2]};
-  padding-bottom: ${(props) => props.theme.space[2]};
-`;
 
 export const ProductInfo = ({ product = {} }) => {
   const {
@@ -49,13 +33,13 @@ export const ProductInfo = ({ product = {} }) => {
     <Card>
       <Card.Cover key={name} source={{ uri: photos[0] }} />
       <Info>
-        <Title>{name}</Title>
+        <Text varian="label">{name}</Text>
         <Rating>
           {ratingArray.map(() => (
             <SvgXml xml={star} width={20} height={20} />
           ))}
         </Rating>
-        <Price>{price}</Price>
+        <price>{price}</price>
       </Info>
     </Card>
   );
