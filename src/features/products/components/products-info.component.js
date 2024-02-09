@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Text,  } from "react-native";
+import { Text } from "react-native";
 import { Card } from "react-native-paper";
 import { SvgXml } from "react-native-svg";
 import star from "../../../../assets/star";
@@ -14,7 +14,6 @@ import {
   Icon,
   Adress,
 } from "./products-info.styles";
-
 
 export const ProductInfo = ({ product = {} }) => {
   const {
@@ -33,13 +32,15 @@ export const ProductInfo = ({ product = {} }) => {
     <Card>
       <Card.Cover key={name} source={{ uri: photos[0] }} />
       <Info>
-        <Text varian="label">{name}</Text>
+        <Text variant="label">{name}</Text>
+
         <Rating>
           {ratingArray.map(() => (
             <SvgXml xml={star} width={20} height={20} />
           ))}
         </Rating>
-        <price>{price}</price>
+
+        <Text variant="label">{price}</Text>
       </Info>
     </Card>
   );
