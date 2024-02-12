@@ -8,6 +8,7 @@ export const Icon = styled.Image`
 
 export const ProductCard = styled(Card)`
   background-color: ${(props) => props.theme.colors.bg.primary};
+  margin-bottom: ${(props) => props.theme.space[3]};
 `;
 
 export const ProductCardCover = styled(Card.Cover)`
