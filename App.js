@@ -12,6 +12,7 @@ import {
 import { useFonts as useLato, Lato_400Regular } from "@expo-google-fonts/lato";
 
 import { theme } from "./src/infrastructure/theme";
+import { Ionicons } from "@expo/vector-icons";
 
 const Tab = createBottomTabNavigator();
 const Settings = () => <Text>Settings</Text>;
@@ -34,7 +35,31 @@ export default function App() {
     <>
       <ThemeProvider theme={theme}>
         <NavigationContainer>
-          <Tab.Navigator>
+          <Tab.Navigator
+            screenOptions={({ route }) => ({
+              // eslint-disable-next-line react/no-unstable-nested-components
+              tabBarIcon: ({ color, size }) => {
+                let iconName;
+
+                if (route.name === "Products") {
+                  iconName = "storefront-sharp";
+                } else if (route.name === "Settings") {
+                  iconName = "settings-sharp";
+                } else if (route.name === "Map") {
+                  iconName = "map-sharp";
+                } else if (route.name === "Cart") {
+                  iconName = "cart-sharp";
+                }
+
+                // You can return any component that you like here!
+                return <Ionicons name={iconName} size={size} color={color} />;
+              },
+            })}
+            tabBarOptions={{
+              activeTintColor: "blue",
+              inactiveTintColor: "gray",
+            }}
+          >
             <Tab.Screen name="Products" component={ProductsScreen} />
             <Tab.Screen name="Map" component={Map} />
             <Tab.Screen name="Cart" component={Cart} />
