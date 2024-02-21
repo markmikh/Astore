@@ -15,9 +15,26 @@ import { theme } from "./src/infrastructure/theme";
 import { Ionicons } from "@expo/vector-icons";
 
 const Tab = createBottomTabNavigator();
+
+const TAB_ICON = {
+  Products: "storefront-sharp",
+  Map: "map-sharp",
+  Settings: "settings-sharp",
+  Cart: "cart-sharp",
+};
+
 const Settings = () => <Text>Settings</Text>;
 const Cart = () => <Text>Cart</Text>;
 const Map = () => <Text>Map</Text>;
+
+const createScreenOptions = ({ route }) => {
+  const iconName = TAB_ICON[route.name];
+  return {
+    tabBarIcon: ({ size, color }) => (
+      <Ionicons name={iconName} size={size} color={color} />
+    ),
+  };
+};
 
 export default function App() {
   const [oswaldLoaded] = useOswald({
@@ -36,25 +53,7 @@ export default function App() {
       <ThemeProvider theme={theme}>
         <NavigationContainer>
           <Tab.Navigator
-            screenOptions={({ route }) => ({
-              // eslint-disable-next-line react/no-unstable-nested-components
-              tabBarIcon: ({ color, size }) => {
-                let iconName;
-
-                if (route.name === "Products") {
-                  iconName = "storefront-sharp";
-                } else if (route.name === "Settings") {
-                  iconName = "settings-sharp";
-                } else if (route.name === "Map") {
-                  iconName = "map-sharp";
-                } else if (route.name === "Cart") {
-                  iconName = "cart-sharp";
-                }
-
-                // You can return any component that you like here!
-                return <Ionicons name={iconName} size={size} color={color} />;
-              },
-            })}
+            screenOptions={createScreenOptions}
             tabBarOptions={{
               activeTintColor: "blue",
               inactiveTintColor: "gray",
