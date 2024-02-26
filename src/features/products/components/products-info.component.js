@@ -14,34 +14,31 @@ import {
   Icon,
   Adress,
 } from "./products-info.styles";
+import { useProductsContext } from "../../services/products/mock/products.context";
 
-export const ProductInfo = ({ product = {} }) => {
-  const {
-    name = "Alumatron",
-    icon,
-    rating = 5,
-    photos = [
-      "https://store.auroramarine.com/media/catalog/product/cache/3e5f9ca388308b099b51a8e93293e1b1/a/l/alumetron-both_1.jpeg",
-    ],
-    price = "$120.00",
-  } = product;
+export const ProductInfo = () => {
+  const products = useProductsContext(); 
 
   const ratingArray = Array.from(new Array(Math.ceil(rating)));
 
-  return (
-    <Card>
-      <Card.Cover key={name} source={{ uri: photos[0] }} />
-      <Info>
-        <Text variant="label">{name}</Text>
-
-        <Rating>
-          {ratingArray.map(() => (
-            <SvgXml xml={star} width={20} height={20} />
-          ))}
-        </Rating>
-
-        <Text variant="label">{price}</Text>
-      </Info>
-    </Card>
+   return (
+    <>
+      {products.map((product) => (
+        <ProductCard key={product.id}>
+          <ProductCardCover source={{ uri: product.image }} />
+          <Info>
+            <Text>{product.name}</Text>
+            <Rating>
+              {Array.from(new Array(Math.ceil(product.rating))).map(
+                (_, index) => (
+                  <SvgXml key={index} xml={star} width={20} height={20} />
+                )
+              )}
+            </Rating>
+            <Text>{product.price}</Text>
+          </Info>
+        </ProductCard>
+      ))}
+    </>
   );
 };

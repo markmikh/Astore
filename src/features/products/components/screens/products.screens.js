@@ -11,6 +11,7 @@ import {
 import styled from "styled-components/native";
 import { ProductInfo } from "../products-info.component";
 import { Spacer } from "../../../../components/spacer/spacer.component";
+import { useProductsContext } from "../../services/products/mock/products.context";
 
 const SafeArea = styled(SafeAreaView)`
   flex: 1;
@@ -27,41 +28,26 @@ const ProductList = styled(FlatList).attrs({
   },
 })``;
 
+export const ProductsScreen = () => {
+  const products = useProductsContext(); // Get the products data from the context
 
-export const ProductsScreen = () => (
-  <SafeArea>
-    <SearchContainer>
-      <Searchbar />
-    </SearchContainer>
-
-     <ProductList
-      data={[
-        { name: 1 },
-        { name: 2 },
-        { name: 3 },
-        { name: 4 },
-        { name: 5 },
-        { name: 6 },
-        { name: 7 },
-        { name: 8 },
-        { name: 9 },
-        { name: 10 },
-        { name: 11 },
-        { name: 12 },
-        { name: 13 },
-        { name: 14 },
-      ]}
-      renderItem={() => (
-        <Spacer position="bottom" size="large">
-          <ProductInfo />
-        </Spacer>
-      )}
-      keyExtractor={(item) => item.name}
-      // eslint-disable-next-line react-native/no-inline-styles
-      contentContainerStyle={{ padding: 20 }}
-    />
-  </SafeArea>
-);
+  return (
+    <SafeArea>
+      <SearchContainer>{Searchbar}</SearchContainer>
+      <ProductList
+        data={products}
+        renderItem={() => (
+          <Spacer position="bottom" size="large">
+            <ProductInfo />
+          </Spacer>
+        )}
+        keyExtractor={(item) => item.id.toString()}
+        // eslint-disable-next-line react-native/no-inline-styles
+        contentContainerStyle={{ padding: 20 }}
+      />
+    </SafeArea>
+  );
+};
 
 // Copyright 2023 markmikhail
 //

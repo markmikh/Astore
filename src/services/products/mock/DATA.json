@@ -1,0 +1,192 @@
+{
+	"products":[
+
+
+		{
+			"id": 1,
+	      	"name": "ALUMETRON®",
+	      	"image": "https://auroramarine.ca/media/catalog/product/cache/45e5d9f6b1b3cfdfcecc503cbb73ca14/a/l/alumetron-both_1.jpg",
+	      	"rating": 4.5,
+	      	"price": 58.99
+	      	},
+
+	      	
+	      	{
+			"id": 2,
+	      	"name": "ALUMABUFF®",
+	      	"image": "https://auroramarine.ca/media/catalog/product/cache/45e5d9f6b1b3cfdfcecc503cbb73ca14/a/l/alumabuff-both_1.jpg",
+	      	"rating": 4,
+	      	"price": 57.99
+	      	},
+
+
+	      	{
+			"id": 3,
+	      	"name": "CANVAS SHIELD®",
+	      	"image": "https://auroramarine.ca/media/catalog/product/cache/45e5d9f6b1b3cfdfcecc503cbb73ca14/c/a/canvasshieldbothnew.jpg",
+	      	"rating": 3,
+	      	"price": 49.99
+	      	},
+
+
+	      	{
+			"id": 4,
+	      	"name": "BOAT CLEAN PLUS®",
+	      	"image": "https://auroramarine.ca/media/catalog/product/cache/45e5d9f6b1b3cfdfcecc503cbb73ca14/b/o/boatcleanplus-both.jpg",
+	      	"rating": 5,
+	      	"price": 22.99
+	      	},
+
+
+	      	{
+			"id": 5,
+	      	"name": "LINEAR BUFFER® PowerPoint® Professional Quality",
+	      	"image": "https://auroramarine.ca/media/catalog/product/cache/45e5d9f6b1b3cfdfcecc503cbb73ca14/l/i/linear-buffer-product-1_5.jpg",
+	      	"rating": 5,
+	      	"price": 299.99
+	      	},
+
+
+	      	{
+			"id": 7,
+	      	"name": "ODOR FREE® Storage Treatment",
+	      	"image": "https://auroramarine.ca/media/catalog/product/cache/45e5d9f6b1b3cfdfcecc503cbb73ca14/o/d/odor-free-storage.jpg",
+	      	"rating": 3,
+	      	"price": 25.99
+	      	},
+
+
+	      	{
+			"id": 8,
+	      	"name": "VELCRO® STRAP",
+	      	"image": "https://auroramarine.ca/media/catalog/product/cache/45e5d9f6b1b3cfdfcecc503cbb73ca14/v/e/velcro-strap.jpg",
+	      	"rating": 5,
+	      	"price": 19.99
+	      	},
+
+	      	
+	      	{
+			"id": 9,
+	      	"name": "VINYL CARE KIT®",
+	      	"image": "https://auroramarine.ca/media/catalog/product/cache/45e5d9f6b1b3cfdfcecc503cbb73ca14/v/i/vinyl-care-kit-2018.jpg",
+	      	"rating": 5,
+	      	"price": 52.99
+	      	},
+
+
+	      	{
+			"id": 10,
+	      	"name": "VINYL GUARD® - Non-greasy Marine Vinyl Protector",
+	      	"image": "https://auroramarine.ca/media/catalog/product/cache/45e5d9f6b1b3cfdfcecc503cbb73ca14/v/i/vinylguard-both.jpg",
+	      	"rating": 4,
+	      	"price": 29.99
+	      	},
+
+
+	      	{
+			"id": 11,
+	      	"name": "VS721® BOTTOM COAT",
+	      	"image": "https://auroramarine.ca/media/catalog/product/cache/45e5d9f6b1b3cfdfcecc503cbb73ca14/v/s/vs721-both.jpg",
+	      	"rating": 5,
+	      	"price": 89.99
+	      	},
+
+
+	      	{
+			"id": 12,
+	      	"name": "VS721® FOULING RELEASE KIT",
+	      	"image": "https://auroramarine.ca/media/catalog/product/cache/45e5d9f6b1b3cfdfcecc503cbb73ca14/v/s/vs721-fouling-release-kit-2018.jpg",
+	      	"rating": 4,
+	      	"price": 142.99
+	      	},
+
+
+	      	{
+			"id": 13,
+	      	"name": "MARINE POWER MITT®",
+	      	"image": "https://auroramarine.ca/media/catalog/product/cache/45e5d9f6b1b3cfdfcecc503cbb73ca14/m/i/mitt-new_3.jpg",
+	      	"rating": 4.5,
+	      	"price": 25.99
+	      	},
+
+	      	
+	      	{
+
+	      		"id": 14,
+	      		"name": "STAINLESS SHIELD®",
+	      		"image": "https://auroramarine.ca/media/catalog/product/cache/45e5d9f6b1b3cfdfcecc503cbb73ca14/s/t/stainlessshield-both.jpg",
+	      		"rating": 4,
+	      		"price" : 54.99 
+	      	},
+
+
+	      	{
+
+	      		"id": 15,
+	      		"name": "ODOR FREE® with Tissue Digesters",
+	      		"image": "https://auroramarine.ca/media/catalog/product/cache/45e5d9f6b1b3cfdfcecc503cbb73ca14/o/d/odor-free-both_1_4.jpg",
+	      		"rating": 4,
+	      		"price": 42.89
+	      	},
+
+
+	      	{
+
+	      		"id": 16,
+	      		"name": "PONTOON CLEAR COAT REPAIR & MAINTENANCE KIT",	    	      	"image": "",
+	      		"rating": 3,
+	      		"price": 219.99
+	      	},
+
+
+	      	{
+
+	      		"id": 17,
+	      		"name": "ALGEX®",
+	      		"image": "https://auroramarine.ca/media/catalog/product/cache/45e5d9f6b1b3cfdfcecc503cbb73ca14/a/l/algexboth.jpg",
+	      		"rating": 5,
+	      		"price": 39.59
+	      	},
+
+
+	      	{
+
+	      		"id": 18,
+	      		"name": "ALUMABRITE CBX® - MARINE GRADE",
+	      		"image": "https://auroramarine.ca/media/catalog/product/cache/45e5d9f6b1b3cfdfcecc503cbb73ca14/a/l/alumabrite-both_2.jpg",
+	      		"rating": 4,
+	      		"price": 26.39
+	      	},
+
+
+	      	{
+
+	      		"id": 19,
+	      		"name": "ALUMABUFF PAD KIT®",
+	      		"image": "https://auroramarine.ca/media/catalog/product/cache/45e5d9f6b1b3cfdfcecc503cbb73ca14/a/l/alumabuffpadkit-1.jpeg",
+	      		"rating": 4,
+	      		"price": 43.99
+	      	},
+
+
+	      	{
+
+	      		"id": 20,
+	      		"name": "CANVAS SHIELD® WATERPROOFING KITS",
+	      		"image": "https://auroramarine.ca/media/catalog/product/cache/45e5d9f6b1b3cfdfcecc503cbb73ca14/c/a/canvas-shield-kit-new_6.jpg",
+	      		"rating": 3,
+	      		"price": 47.99
+	      	},
+
+
+	      	{
+
+	      		"id": 21,
+	      		"name": "DRI STITCH®",
+	      		"image": "https://auroramarine.ca/media/catalog/product/cache/45e5d9f6b1b3cfdfcecc503cbb73ca14/d/r/dristitch-both.jpg",
+	      		"rating": 5,
+	      		"price": 19.99
+	      	},
+
+	]
+}
