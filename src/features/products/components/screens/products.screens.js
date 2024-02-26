@@ -11,7 +11,7 @@ import {
 import styled from "styled-components/native";
 import { ProductInfo } from "../products-info.component";
 import { Spacer } from "../../../../components/spacer/spacer.component";
-import { useProductsContext } from "../../services/products/mock/products.context";
+import { useProductsContext } from "../../../../services/products/mock/products.context";
 
 const SafeArea = styled(SafeAreaView)`
   flex: 1;

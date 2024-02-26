@@ -14,7 +14,7 @@ import {
   Icon,
   Adress,
 } from "./products-info.styles";
-import { useProductsContext } from "../../services/products/mock/products.context";
+import { useProductsContext } from "../../../services/products/mock/products.context";
 
 export const ProductInfo = () => {
   const products = useProductsContext(); 
